@@ -9,9 +9,8 @@
 
 const cel = +prompt('Какая сейчас температура по Цельсию?');
 
-function convertation (temp){
-    const far = (9 / 5) * temp + 32;
-    return far;
+function convertation(temp){
+    return (9 / 5) * temp + 32;
 }
 
 alert(`по Цельсию: ${cel}, по Фаренгейту: ${convertation(cel).toFixed(1)}`);
